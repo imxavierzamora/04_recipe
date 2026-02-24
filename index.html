@@ -30,7 +30,7 @@
             width: 100%;
             margin-left: auto;
             margin-right: auto;
-            border: 5px solid;
+            border: 5px dashed;
             border-top-color: rgba(240, 248, 255, 0);
             border-left-color: rgba(240, 248, 255, 0);
             border-right-color: rgba(240, 248, 255, 0);
@@ -39,6 +39,7 @@
 
         #bodycontainer {
             background-color: darkslategray;
+            background-image: url(mai_tai);
             padding: 10px;
             width: 100%;
             max-width: 700px;
@@ -47,40 +48,117 @@
     
         }        
 
+         
+        .Drink {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+
+        img{
+            width: 250px;
+            height: 250px;
+        
+        }
+
+
+        #simple-shadow {
+           text-shadow: 1px 1px 5px rgb(61, 61, 61);
+        }
+
 
         h1{
+
             font-family: "original surfer", system-ui;
-            color: rgb(235, 180, 49);
+            color: rgb(238, 203, 63);
             -webkit-text-stroke-width: .5px;
-            -webkit-text-stroke-color: rgb(70, 81, 85);
+            -webkit-text-stroke-color: rgb(198, 163, 40);
             font-size: 7rem;
             text-align: center;
             padding: 20px 0px 40;
         }
+
+        h2{
+            font-family: "pacifico", system-ui;
+            color: rgb(198, 163, 40);
+            -webkit-text-stroke-width: .5px;
+            -webkit-text-stroke-color: black;
+            font-size: 2rem;
+            text-align: center;
+            padding: 20px 0px 40;
+        }
+
+        h3{
+            font-family: "original surfer", system-ui;
+            color: rgb(215, 196, 124);
+            -webkit-text-stroke-width: .5px;
+            -webkit-text-stroke-color: rgb(188, 164, 30);
+            font-size: 2rem;
+            text-align: center;
+            padding: 20px 0px 40;
+        }
+
+        h4{
+            font-family: "inika", system-ui;
+            text-align: left;
+            padding: 30px;
+            color: rgb(236, 229, 206);
+        }
+
+        li{
+            font-family: "inika", system-ui;
+            text-align: left;
+            padding: 5px;
+            margin-left: 20px;
+            color: rgb(236, 229, 206);
+        }
+
+      
 
     </style>
 </head>
 <body>
 
     <div id="container">
+    <div id="simple-shadow">
         <header>
-            <h1> Trader X's Mai Tai</h1>
-
+            <h1>Trader X's Mai Tai</h1>
+            <h2>a twist on Trader Vic's 1944 Oakland classic </h2>
+            
         </header>
-
+    </div>
     </div>
     <br>
     <div id="bodycontainer">
         <header>
-            <h1> </h1>
-            <img src="mai_tai.png" alt="Mai Tai">"
-            
-
+            <h3>Recipe</h3>
         </header>
-
-    </div>
-
-
+        <article>
+            <ul>
+                <li>1 oz Amber Martinique Rum</li>
+                <li>1 oz Dark Jamaican Rum</li>
+                <li>1 oz fresh lime juice</li>
+                <li>1/2 oz Orgeat Syrup</li>
+                <li>11/2 oz Cointreau</li>
+                <li>garnish with mint (or lime)</li>
+            </ul>
+        </article>
+        <br>
+        <article>
+            <ol>
+                <li>Add all ingredients to a cocktail shaker, except the garnish.</li>
+                <li>Shake and strain into a rocks glass filled with crushed ice.</li> 
+                <li>Garnish with fresh mint and a lime if you fancy that.</li>
+                <li>You can also float some dark rum on top of the cocktail.</li>
+            </ol>
+        </article>
+        <br>
+        <article>
+            <div class="Drink">
+                <img src="mai_tai.png" alt="Mai Tai Drink">
+        </div>
+        </article>
 
 </body>
 </html>
